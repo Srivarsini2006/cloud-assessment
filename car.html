@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Branded Cars</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e2a38;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 0 20px;
+    }
+    .card {
+      background: pink;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(30, 42, 56, 0.3);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .card h2 {
+      margin: 20px 0 10px;
+      color: #1e2a38;
+    }
+    .card p {
+      padding: 0 15px 20px;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    footer {
+      background-color: #1e2a38;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1rem;
+      margin-top: 50px;
+    }
+    @media (max-width: 650px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Branded Cars Showcase</header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW Logo" />
+      <h2>BMW</h2>
+      <p>BMW is a German luxury vehicle manufacturer known for sporty and elegant cars.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" alt="Tesla Logo" />
+      <h2>Tesla</h2>
+      <p>Tesla is an American electric vehicle manufacturer famous for innovation and sustainability.</p>
+    </div>
+
+    
+  
+
+
+</body>
+</html>
