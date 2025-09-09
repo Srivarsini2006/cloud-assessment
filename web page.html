@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Anime Favorites</title>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff4757;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .anime-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .anime-card {
+      background-color: #2f2f4f;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .anime-card:hover {
+      transform: scale(1.05);
+    }
+    .anime-card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-bottom: 2px solid #ff4757;
+    }
+    .anime-card .details {
+      padding: 15px;
+      text-align: center;
+    }
+    .anime-card .details h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #ff6f61;
+    }
+    .anime-card .details p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #dcdcdc;
+    }
+    footer {
+      background-color: #ff4757;
+      text-align: center;
+      padding: 15px;
+      font-size: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>My Anime Favorites</header>
+
+  <section class="anime-gallery">
+    <div class="anime-card">
+      <img src="https://cdn.myanimelist.net/images/anime/10/73274.jpg" alt="Attack on Titan" />
+      <div class="details">
+        <h3>Attack on Titan</h3>
+        <p>A gripping story of humanity’s fight against giant Titans.</p>
+      </div>
+    </div>
+    <div class="anime-card">
+      <img src="https://cdn.myanimelist.net/images/anime/5/73199.jpg" alt="Demon Slayer" />
+      <div class="details">
+        <h3>Demon Slayer</h3>
+        <p>A tale of courage and family in a demon-filled world.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 Your Name - Anime Fan</footer>
+</body>
+</html>
